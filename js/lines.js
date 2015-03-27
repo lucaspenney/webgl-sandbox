@@ -27,6 +27,8 @@ Sandbox.addCastle('lines', function(WIDTH, HEIGHT) {
 	}), THREE.LinePieces);
 	scene.add(line);
 
+
+
 	var angle = 0;
 
 	var render = function() {
@@ -39,6 +41,7 @@ Sandbox.addCastle('lines', function(WIDTH, HEIGHT) {
 		angle += 0.01;
 		var radius = 200;
 		line.rotation.z += speed;
+
 
 
 		camera.lookAt(new THREE.Vector3(0, 0, 0));
