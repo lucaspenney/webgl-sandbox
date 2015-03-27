@@ -1,7 +1,12 @@
+
 body {
-  padding-top: 50px;
+    overflow:hidden;
+    background:black;
 }
-.main {
-  padding: 40px 15px;
-  text-align: center;
+
+.castle-list {
+    position:absolute;
+    top:95%;
+    width:100%;;
+    text-align:center;
 }

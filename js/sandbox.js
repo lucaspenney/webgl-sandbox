@@ -1,7 +1,7 @@
 var Sandbox = {
 	castles: [],
-	width: 1200,
-	height: 700,
+	width: $(window).width(),
+	height: $(window).height(),
 	el: $('.screen'),
 	currentRenderer: null,
 	setRenderer: function(renderer) {
@@ -37,7 +37,9 @@ var Sandbox = {
 			$('.castle-list').append("<a href='#" + castle.name + "' data-name='" + castle.name + "'>" + castle.name + "</a> ");
 		});
 		$('.castle-list a').click(function() {
-			window.location.reload();
+			setTimeout(function() {
+				window.location.reload();
+			}, 50);
 		});
 	},
 };

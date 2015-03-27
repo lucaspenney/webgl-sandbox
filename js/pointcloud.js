@@ -6,6 +6,7 @@ Sandbox.addCastle('pointcloud', function(WIDTH, HEIGHT) {
 	renderer.setSize(WIDTH, HEIGHT);
 	camera = new THREE.PerspectiveCamera(45, WIDTH / HEIGHT, 0.1, 2022000);
 	camera.position.set(100, 200, 300);
+	THREEx.WindowResize(renderer, camera);
 	scene.add(camera);
 	renderer.setSize(WIDTH, HEIGHT);
 	camera.aspect = WIDTH / HEIGHT;
